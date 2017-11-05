@@ -1,0 +1,12 @@
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<app-player-detail *ngFor="let player of players" [player]="player">
+			</app-player-detail>
+		</div>
+
+		<div class="col">
+			<button (click)="sendMessage()" type="button" class="btn btn-primary">Refresh</button>
+		</div>
+	</div>
+</div>
